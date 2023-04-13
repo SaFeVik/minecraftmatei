@@ -1,0 +1,144 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.starter{
+    background: #3E54AC;
+}
+
+.Container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.searchContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#search{
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#tutContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 640px;
+}
+
+.tutorialBox{
+    position:relative;
+    transition: 0.2s;
+}
+.tutorialBox:hover{
+    scale: 1.02;
+}
+
+.tutorial{
+    text-align: center;
+    padding: 5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+.tutorial h3{
+    text-shadow: 1px 1px 1px black;
+    padding-right: 20px;
+}
+.check{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    z-index: 1;
+    background: url("../bilder/check_empty.png") center no-repeat;
+    background-size: contain;
+}
+
+.check.checked{
+    background-image: url("../bilder/check.png");
+}
+
+.check:hover{
+    background-color: black;
+    opacity: 0.5;
+}
+
+.aboutKnapp{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom:0px;
+    width:50px;
+    height:20px;
+    z-index: 1;
+    border-top-right-radius: 5px;
+    background-color: rgb(163, 163, 163);
+    color:black; 
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.aboutKnapp:hover{
+    color:rgb(163, 163, 163);
+    background-color: rgb(0, 0, 0);
+}
+
+.about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    width:200px;
+    height:200px;
+    top:0px;
+    
+}
+.about.show{
+    transition: ease-in-out 1s;
+    display: flex;
+    opacity: 0.7;
+    animation: showAbout 0.2s;
+}
+
+@keyframes showAbout{
+    from {opacity:0;}
+    to {opacity: 0.7;}
+}
+
+.hide{
+    display: none;
+}
+
+
+/* ------------------media--------------- */
+
+@media(max-width: 580px){
+    .starter img{
+        display: none;
+    }
+}
+@media(max-width: 700px){
+    #tutContainer{
+        width: 420px;
+    }
+}
+@media(max-width: 480px){
+    #tutContainer{
+        width: 200px;
+    }
+}

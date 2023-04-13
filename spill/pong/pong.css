@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:600px;
+    padding-block:25px;
+}
+
+#title{
+    text-align: center;
+    color: white;
+    letter-spacing: 20px;
+    background: rgb(20, 20, 20);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+#title::before{
+    content: "";
+    padding-inline: 13px;
+}
+#players{
+    display: flex;
+    align-items: center;
+    padding-inline: 30px;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 10px auto;
+}
+#modes{
+    margin-inline: 20px;
+    font-size: 18px;
+}
+#topText{
+    text-align: center;
+    margin-top: 10px;
+}
+#info{
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    cursor: default;
+    border-radius: 2px;
+}
+
+#gameSpace{
+    position: relative;
+    height: 400px;
+    width: 650px;
+    background-color: rgb(32, 22, 73);
+    border-radius: 2px;
+}
+#gameSpace.nether{
+    background-color: rgb(145, 49, 49);
+}
+#ball{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;   
+    top: 200px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: center no-repeat;
+    background-image: url('./bilder/shulker_projectile.png');
+    background-size: contain;
+}
+#ball.nether{
+    background-image: url('./bilder/fireball.png');
+}
+.particle{
+    width: 13px;
+    height: 13px;
+    background: center no-repeat;
+    background-image: url('./bilder/shulker_particle.png');
+    background-size: contain;
+    position: absolute;
+    animation: particleRemove 1s linear;
+    transform: translateX(-50%) translateY(-50%);
+}
+.particle.nether{
+    background-image: url('./bilder/fireball_particle.png');
+}
+
+@keyframes particleRemove{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+#player1, #player2{
+    position: absolute;
+    height: 80px;
+    width: 35px;
+    top: 200px;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: center no-repeat;
+    background-image: url('./bilder/shield_left.png');
+    background-size: contain;
+}
+#player1{
+    left: 40px;
+}
+#player2{
+    right: 40px;
+    background-image: url('./bilder/shield_right.png');
+}
+#player1.nether, #player2.nether{
+    width: 65px;
+}
+#player1.nether{
+    left: 10px;
+    background-image: url('./bilder/ghast_left.png');
+}
+#player2.nether{
+    right: 10px;
+    background-image: url('./bilder/ghast_right.png');
+}
+#middleLine{
+    position: absolute;
+    left: 49.8%;
+    height: 100%;
+    border: 1px dashed white;
+}
+#score1, #score2{
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 150px;
+    position: absolute;
+    top: 115px;
+}
+#score1{
+    left: 100px;
+}
+#score2{
+    right: 100px;
+}
+
+#popUp{
+    display:none;
+}
+
+@media(max-width:670px){
+    main{
+        display:none;
+    }
+
+    #popUp{
+        display:block;
+        text-align: center;
+        margin-top:50%;
+        margin-inline:30px;
+        font-size: 20px;
+        color:white;
+    }
+}

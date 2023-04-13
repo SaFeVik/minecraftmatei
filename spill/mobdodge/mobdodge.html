@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mobdodge.css">
+    <link rel="stylesheet" href="../../css/felles.css">
+    <title>Enemy Dodge</title>
+</head>
+<body>
+    <header>
+        
+        <a href="../../index.html" class="tittel">
+            <img src="../../bilder/Minecraft-Logo.png" alt="">
+            <p id="pulse">Hallais</p>
+        </a>
+
+        <div class="burger">
+            <div><p>bigshesh</p></div>
+            <div><p>penguinclapper</p></div>
+            <div><p>AiangGlad</p></div>
+        </div>
+        <div class="websites">
+            <a href="../../html/portal.html">Portal finder</a>
+            <a href="../../html/enchantment.html">Enchantment</a>
+            <a href="../../html/cords.html">My cords</a>
+            <a href="../../html/tutorials.html">Tutorials</a>
+            <a href="../../html/games.html">Mini games</a>
+        </div>
+    </header>
+    
+    <main>
+    <div id="gameContainer">
+        <div class="startScreen">
+                <h1 id="titlebop">Mob Dodge</h1>
+                <h2>Difficulty</h2>
+                <div class="difficulty">
+                    <button id="easy">easy</button>
+                    <button id="hard">hard</button>
+                </div>
+                <img src="bilder/slimemenu.gif" alt="slime jumping">
+        </div>
+        <div class="aboutGame">
+            <div class="info">
+            <div id="showinfo">info</div>
+            <h1>How to play</h1>
+            <h3>Controls</h3>
+            <p>Avoid incoming mobs from hitting steve! Use the arrows buttons bellow to manoeuvre steve around the playing field. If you're playing on a computer, you may want to use the arrow keys for a more fluent experince.</p>
+
+            <h3>Difficulty modes</h3>
+            <p>Adjust the difficulty to compensate for you're skill level. On easy mode the mobs move at a pleasent pace, whilst on hard mode, the mobs move twice as fast for a more excilerating experience.</p>
+            <h1>Enjoy!</h1>
+            <img src="bilder/slimemenu2.gif" alt="steve from minecraft">
+            <div id="hideinfo">Hide</div>
+            </div>
+        </div>
+        <div class="countdown">3</div>
+
+        <div class="gameback">
+        <img src="bilder/stonewall.jpg" alt="stonewall">    
+        <img src="bilder/stonewall.jpg" alt="stonewall">
+        </div>
+
+        <p id="liveScore">Score: 0</p>
+
+        <div class="endScreen">
+            <h1>You died!</h1>
+            <p id="deathText">Steve got nailed</p>
+            <div class="scoreContainer">
+            <p>Score: </p>
+            <p id="score"></p>
+            </div>
+            <button id="respawn">try again</button>
+            
+        </div>
+        <div class="endScreenOverlay"></div>
+
+        <div class="player"></div>
+        <div class="enemy"></div>
+    </div>
+    <div class="arrows">
+        <div class="left">
+            <img src="bilder/pixelarrow.png" alt="pixelarrowleft">
+        </div>
+
+        <div class="right">
+            <img src="bilder/pixelarrow.png" alt="pixelarrowright">
+        </div> 
+    </div>
+</main>
+    <script src="mobdodge.js"></script>
+    <script src="../../javaScript/felles.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+h3{
+    text-align: center;
+}
+
+.starter{
+    background: #674188;
+}
+
+.starter > img{
+    height:230px;
+}
+
+.portal_kalkuler{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.map{
+    background-image: url('../bilder/Nether_map.png');
+    width: 370px;
+    height: 370px;
+    position: relative;
+    border-radius: 5px;
+}
+
+#portal1{
+    position: absolute;
+    top: 46%;
+    left: 47%;
+    width: 30px;
+}
+
+.pil{
+    transform-origin: 0%;
+    position: absolute;
+    position: relative;
+    top: 46%;
+    left: 51%;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    transition: transform 2s;
+}
+#portal2{
+    width: 30px;
+    transform: rotate(90deg);
+    transition: transform 2s;
+}
+#lengde{
+    position: absolute;
+    left: 40px;
+    top: -10px;
+}
+#degrees{
+    position: absolute;
+    padding: 8px;
+    background-color: black;
+    border-radius: 5px;
+    top: 5px;
+    left: 5px;
+}
+#kompass{
+    position: absolute;
+    width: 60px;
+    bottom: 5px;
+    left: 5px;
+}
+
+
+input{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-inline: 10px;
+}
+
+.change_tittel{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#change{
+    height: 20px;
+    background: black;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+#change:hover{
+    background: rgb(94, 94, 94);
+}
+
+.nether_over{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+
+.koordinat_over, .koordinat_nether{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.koordinat_over label{
+    color: rgb(52, 177, 52);
+}
+.koordinat_nether label{
+    color: rgb(210, 79, 79);
+}
+
+#n_o_calculate{
+    align-self: center;
+}
+
+/* ------------------media--------------- */
+
+@media(max-width: 580px){
+    .starter img{
+        display: none;
+    }
+}

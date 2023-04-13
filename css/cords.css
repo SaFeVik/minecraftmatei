@@ -1,0 +1,123 @@
+.starter{
+    background-color: #b20404;
+}
+
+.cordContainer{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#makeCords{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+    background-color: #171615;
+    z-index: 1;
+}
+#makeCords input{
+    padding: 5px;
+    font-size: 20px;
+}
+
+#xCord, #yCord{
+    width: 100px;
+}
+#nameCord{
+    width: 320px;
+}
+
+.cordContainer label{
+    display: flex;
+    flex-direction: column;
+}
+
+#new{
+    position: absolute;
+    right: -10px;
+    bottom: -22px;
+    border-radius: 8px;
+    padding: 10px;
+    padding-block: 5px;
+    font-size: 20px;
+}
+
+#newContainer{
+    width: 100%;
+    display:flex;
+    flex-direction:column-reverse;
+}
+
+/* Ny og slett animasjon */
+.newCord.animatedLast{
+    animation: fadeAnim 0.3s;
+}
+@keyframes fadeAnim{
+    from {transform: translateY(-50px);opacity: 0;scale: 0.9;}
+    to {transform: translateY(0px);opacity: 1; scale: 1;}
+}
+
+.newCord.animatedNew{
+    animation: allAnim 0.3s;
+}
+@keyframes allAnim{
+    0% {transform: translateY(-50px);}
+    100% {transform: translateY(0px);}
+}
+
+.newCord.animatedDelete{
+    animation: deleteAnim 0.3s;
+}
+@keyframes deleteAnim{
+    0% {transform: translateY(50px);}
+    100% {transform: translateY(0px);}
+}
+
+/* Slett */
+.delete{
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    right: 3px;
+    top: 4px;
+    cursor: pointer;
+    background: url("../bilder/trashcan.png") center;
+    background-size: contain;
+}
+.delete:hover{
+    background-image: url("../bilder/trashcan_hover.png");
+}
+
+/* Ny knapp */
+.newCord{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid black;
+    color: rgb(225, 225, 225);
+    border-radius: 5px;
+    background-color: rgb(41, 41, 41);
+    margin-top: 10px;
+    padding: 5px 80px 5px 30px;
+    position: relative;
+}
+
+/* ------------------media--------------- */
+
+@media(max-width: 580px){
+    .starter img{
+        display: none;
+    }
+    #makeCords{
+        flex-direction: column;
+    }
+    .newCord{
+        flex-direction: column;
+    }
+}

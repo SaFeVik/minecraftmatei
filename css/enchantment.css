@@ -1,0 +1,134 @@
+h2{
+    font-family: 'minecraft1';
+    text-align: center;
+}
+
+/* main{
+    overflow-x: hidden;
+} */
+
+.starter{
+    background-color: #04a770;
+}
+
+.language_learning{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.pages, .pages2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 120px;
+    width: 100%;
+    user-select: none;
+}
+.pages div{
+    font-family: 'minecraft enchantment';
+    font-size: 35px;
+}
+.pages2 div{
+    font-family: 'minecraft2';
+    font-size: 35px;
+}
+
+#page1, #page2, #page3, #page4{
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    /* left: 35%; */
+    background-image: url('../bilder/enchanting_page.png');
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 5px;
+}
+
+#page1, #page2{
+    top:100px;
+}
+
+#svar{
+    width: 200px;
+    height: 300px;
+    margin-top: -20px;
+    text-align: center;
+    font-family: 'minecraft2', sans-serif;
+    font-size: 30px;
+    background-image: url('../bilder/enchantingtable.png');
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 0px 95px;
+    transition: font-size 0.5s;
+}
+
+#cheat.show{
+    background-image: url('../bilder/andesite_blue1.png');
+}
+#cheat_img{
+    position: absolute;
+    width: 90%;
+    border-radius: 10px;
+    margin-top:20px;
+}
+#cheat_img.show{
+    display: block;
+}
+
+.keyboard img{
+    width: 9%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.keyboard img:hover{
+    opacity: 0.8;
+}
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.row1, .row2, .row3{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.red{
+    background-color: #FF0032;
+}
+.green{
+    background-color: #03C988;
+}
+
+/* ------------------media--------------- */
+
+/* @media(max-width: 580px){
+    .starter img{
+        display: none;
+    }
+}
+@media(max-width: 660px){
+    #page1, #page2, #page3, #page4{
+        left: 40%;
+    }
+}
+@media(max-width: 480px){
+    #page1, #page2, #page3, #page4{
+        left: 35%;
+    }
+} */

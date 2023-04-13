@@ -1,0 +1,92 @@
+[
+    {
+      "tittel": "Gold",
+      "link": "https://www.youtube.com/watch?v=mZWlTU4gz3o&t=",
+      "bilde": "gold_ingot.png",
+      "about": ["-Time consuming", "-Best xp/gold farm", "-Expensive"]
+    },
+    {
+      "tittel": "Iron",
+      "link": "https://www.youtube.com/watch?v=xDJtXznj8Fg",
+      "bilde": "iron_ingot.png",
+      "about": ["-Easy build", "-Best iron/poppy farm", "-Affordable"]
+    },
+    {
+      "tittel": "Skeleton",
+      "link": "https://www.youtube.com/watch?v=_1y8kQ7Jvbk&t=",
+      "bilde": "skeleton.png",
+      "about": ["-Easy build", "-Decent xpfarm", "-Affordable"]
+    },
+    {
+      "tittel": "Wither skeleton",
+      "link": "https://www.youtube.com/watch?v=hvO-re1dFpA",
+      "bilde": "wither_skeleton.png",
+      "about": ["-Hard build", "-Best coalfarm", "-Expensive"]
+    },
+    {
+      "tittel": "Cow",
+      "link": "https://www.youtube.com/watch?v=1vKoarREn5Q",
+      "bilde": "cow.png",
+      "about": ["-Easy build", "-Decent food farm", "-Cheap"]
+    },
+    {
+      "tittel": "Bee",
+      "link": "https://www.youtube.com/watch?v=EIadOmbdjtg",
+      "bilde": "bee.png",
+      "about": ["-Easy build", "-Efficient honey farm", "-Affordable"]
+    },
+    {
+      "tittel": "Slime",
+      "link": "https://www.youtube.com/watch?v=PowMf3ecq4A",
+      "bilde": "slime.png",
+      "about": ["-Hard build", "-OP slime farm", "-Expensive"]
+    },
+    {
+      "tittel": "Blaze",
+      "link": "https://www.youtube.com/watch?v=oFhKMnJKow4",
+      "bilde": "blaze.png",
+      "about": ["-Intermediate build", "-OP blaze rod farm", "-Affordable"]
+    },
+    {
+      "tittel": "Enderman",
+      "link": "https://www.youtube.com/watch?v=tMgBbvH7AhY",
+      "bilde": "enderman.png",
+      "about": ["-Easy build", "-OP xp farm", "-Cheap"]
+    },
+    {
+      "tittel": "Witch",
+      "link": "https://www.youtube.com/watch?v=sofyZ44Rw_E",
+      "bilde": "witch.png",
+      "about": ["-Intermediate build", "-OP dust farm", "-Affordable"]
+    },
+    {
+      "tittel": "Villager",
+      "link": "https://www.youtube.com/watch?v=czTDTekEJ50",
+      "bilde": "villager.png",
+      "about": ["-Easy build", "-Efficient", "-Cheap"]
+    },
+    {
+      "tittel": "Sugar cane",
+      "link": "https://www.youtube.com/watch?v=gluafRATs7I",
+      "bilde": "sugar_cane.png",
+      "about": ["-Intermediate build", "-Efficient", "-Varies in price"]
+    },
+    {
+      "tittel": "Zombie/mob",
+      "link": "https://www.youtube.com/watch?v=l5s8kkqB7-I",
+      "bilde": "zombie.png",
+      "about": ["-Easy build", "-Decent xp farm", "-Cheap"]
+    },
+    {
+      "tittel": "Emerald",
+      "link": "https://www.youtube.com/watch?v=B2YLkI1mbGE",
+      "bilde": "emerald.png",
+      "about": ["-Hard build", "-Efficient", "-Expensive"]
+    },
+    {
+      "tittel": "Chicken",
+      "link": "https://www.youtube.com/watch?v=5TKL00JVf-c",
+      "bilde": "chicken.png",
+      "about": ["-Very easy build", "-Small", "-Cheap"]
+    }
+]
